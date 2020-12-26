@@ -1,0 +1,295 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 3,
+        "name": "Case 1",
+        "description": "",
+        "id": "getir-test-cases;case-1",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 23755517400,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "Open to the GetirApp",
+            "match": {
+              "location": "StepDefinition.openToTheGetirApp()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 11141221800,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "Login by entering username \"hello@getir.com\" password \"hello\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "hello@getir.com",
+                  "offset": 28
+                },
+                {
+                  "val": "hello",
+                  "offset": 55
+                }
+              ],
+              "location": "StepDefinition.loginByUsernameAndPassword(String,String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 10013965500,
+              "error_message": "java.lang.NullPointerException\r\n\tat methods.BaseMethods.findByElement(BaseMethods.java:41)\r\n\tat methods.MainPageMethod.goToBasket(MainPageMethod.java:24)\r\n\tat steps.StepDefinition.goToTheBasket(StepDefinition.java:50)\r\n\tat ✽.Then Go to the basket.(TestCases.feature:6)\r\n",
+              "status": "failed"
+            },
+            "line": 6,
+            "name": "Go to the basket.",
+            "match": {
+              "location": "StepDefinition.goToTheBasket()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 7,
+            "name": "Checking for no items in the basket",
+            "match": {
+              "location": "StepDefinition.checkBasketForNoItems()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 8,
+            "name": "Return to the homepage",
+            "match": {
+              "location": "StepDefinition.returnToHomePage()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 9,
+            "name": "Go to the \"Atıştırmalık\" category",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Atıştırmalık",
+                  "offset": 11
+                }
+              ],
+              "location": "StepDefinition.goToTheSelectedCategory(String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 10,
+            "name": "\"1\" product is added from the \"1\". product",
+            "match": {
+              "arguments": [
+                {
+                  "val": "1",
+                  "offset": 1
+                },
+                {
+                  "val": "1",
+                  "offset": 31
+                }
+              ],
+              "location": "StepDefinition.addingAmountOfProduct(int,int)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 11,
+            "name": "The status of adding \"1\" of the \"1\". product to the basket is controlled",
+            "match": {
+              "arguments": [
+                {
+                  "val": "1",
+                  "offset": 22
+                },
+                {
+                  "val": "1",
+                  "offset": 33
+                }
+              ],
+              "location": "StepDefinition.controlOfAddingAmountOfProductToTheBasket(int,int)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 12,
+            "name": "\"1\" product is added from the \"2\". product",
+            "match": {
+              "arguments": [
+                {
+                  "val": "1",
+                  "offset": 1
+                },
+                {
+                  "val": "2",
+                  "offset": 31
+                }
+              ],
+              "location": "StepDefinition.addingAmountOfProduct(int,int)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 13,
+            "name": "The status of adding \"1\" of the \"2\". product to the basket is controlled",
+            "match": {
+              "arguments": [
+                {
+                  "val": "1",
+                  "offset": 22
+                },
+                {
+                  "val": "2",
+                  "offset": 33
+                }
+              ],
+              "location": "StepDefinition.controlOfAddingAmountOfProductToTheBasket(int,int)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 14,
+            "name": "Return to the homepage",
+            "match": {
+              "location": "StepDefinition.returnToHomePage()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 15,
+            "name": "Go to the \"İçecek\" category",
+            "match": {
+              "arguments": [
+                {
+                  "val": "İçecek",
+                  "offset": 11
+                }
+              ],
+              "location": "StepDefinition.goToTheSelectedCategory(String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 16,
+            "name": "\"1\" product is added from the \"1\". product",
+            "match": {
+              "arguments": [
+                {
+                  "val": "1",
+                  "offset": 1
+                },
+                {
+                  "val": "1",
+                  "offset": 31
+                }
+              ],
+              "location": "StepDefinition.addingAmountOfProduct(int,int)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 17,
+            "name": "The status of adding \"1\" of the \"1\". product to the basket is controlled",
+            "match": {
+              "arguments": [
+                {
+                  "val": "1",
+                  "offset": 22
+                },
+                {
+                  "val": "1",
+                  "offset": 33
+                }
+              ],
+              "location": "StepDefinition.controlOfAddingAmountOfProductToTheBasket(int,int)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 18,
+            "name": "Go to the basket.",
+            "match": {
+              "location": "StepDefinition.goToTheBasket()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 19,
+            "name": "All items in the basket are deleted.",
+            "match": {
+              "location": "StepDefinition.allItemsInTheBasketAreDeleted()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 20,
+            "name": "Checking for no items in the basket",
+            "match": {
+              "location": "StepDefinition.checkBasketForNoItems()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Getir Test Cases",
+    "description": "",
+    "id": "getir-test-cases",
+    "keyword": "Feature",
+    "uri": "TestCases.feature"
+  }
+]

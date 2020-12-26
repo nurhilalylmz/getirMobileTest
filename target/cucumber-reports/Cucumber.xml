@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite failures="1" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="44.910705">
+    <testcase classname="Getir Test Cases" name="Case 1" time="44.910705">
+        <failure message="java.lang.NullPointerException&#13;&#10;&#9;at methods.BaseMethods.findByElement(BaseMethods.java:41)&#13;&#10;&#9;at methods.MainPageMethod.goToBasket(MainPageMethod.java:24)&#13;&#10;&#9;at steps.StepDefinition.goToTheBasket(StepDefinition.java:50)&#13;&#10;&#9;at ✽.Then Go to the basket.(TestCases.feature:6)&#13;&#10;">
+            <![CDATA[Given Open to the GetirApp..................................................passed
+Then Login by entering username "hello@getir.com" password "hello"..........passed
+Then Go to the basket.......................................................failed
+Then Checking for no items in the basket....................................skipped
+Then Return to the homepage.................................................skipped
+Then Go to the "Atıştırmalık" category......................................skipped
+Then "1" product is added from the "1". product.............................skipped
+Then The status of adding "1" of the "1". product to the basket is controlled.skipped
+Then "1" product is added from the "2". product.............................skipped
+Then The status of adding "1" of the "2". product to the basket is controlled.skipped
+Then Return to the homepage.................................................skipped
+Then Go to the "İçecek" category............................................skipped
+Then "1" product is added from the "1". product.............................skipped
+Then The status of adding "1" of the "1". product to the basket is controlled.skipped
+Then Go to the basket.......................................................skipped
+Then All items in the basket are deleted....................................skipped
+Then Checking for no items in the basket....................................skipped
+
+StackTrace:
+java.lang.NullPointerException
+	at methods.BaseMethods.findByElement(BaseMethods.java:41)
+	at methods.MainPageMethod.goToBasket(MainPageMethod.java:24)
+	at steps.StepDefinition.goToTheBasket(StepDefinition.java:50)
+	at ✽.Then Go to the basket.(TestCases.feature:6)
+]]>
+        </failure>
+    </testcase>
+</testsuite>
