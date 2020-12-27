@@ -17,7 +17,7 @@ public class LoginMethod extends BaseMethods
         writeText(ContantsLoginPage.username,username);
         visibilityOfElement(ContantsLoginPage.password);
         writeText(ContantsLoginPage.password,password);
-        clickElement(findByElement(ContantsLoginPage.loginButton));
+        clickElement(ContantsLoginPage.loginButton);
     }
     public void checkSuccessLogin(){
         visibilityOfElement(ContantsLoginPage.profilIcon);

@@ -34,7 +34,7 @@ public class StepDefinition {
                 mainPageMethod.selectCategory(category);
         }
         @Then("^\"([^\"]*)\" product is added from the \"([^\"]*)\"\\. product$")
-        public void addingAmountOfProduct(int productCount, int whichProduct){
+        public void addingAmountOfProduct(int productCount, int whichProduct) throws InterruptedException {
                 categoryPageMethod.addingProduct(productCount,whichProduct);
         }
         @Then("^The status of adding \"([^\"]*)\" of the \"([^\"]*)\"\\. product to the basket is controlled$")
@@ -42,7 +42,7 @@ public class StepDefinition {
                 categoryPageMethod.controlOfAmountOfProduct(productCount,whichProduct);
         }
         @Then("^Return to the homepage$")
-        public void returnToHomePage(){
+        public void returnToHomePage() throws InterruptedException {
                 categoryPageMethod.backToButton();
         }
         @Then("^Go to the basket\\.$")
@@ -50,7 +50,7 @@ public class StepDefinition {
                 mainPageMethod.goToBasket();
         }
         @Then("^All items in the basket are deleted\\.$")
-        public void allItemsInTheBasketAreDeleted(){
+        public void allItemsInTheBasketAreDeleted() throws InterruptedException {
                 basketMethod.removeProducts();
         }
 
@@ -58,6 +58,17 @@ public class StepDefinition {
         public void checkedInIfLoggedIn()
         {
                 loginMethod.checkSuccessLogin();
+        }
+
+        @Then("^Write Console Category items$")
+        public void writeConsoleCategoryItems() {
+                mainPageMethod.categoryCount();
+        }
+
+        @Then("^Increasing the number of items in the basket\\.$")
+        public void ıncreasingTheNumberOfItemsInTheBasket()
+        {
+                basketMethod.increaseProducts();
         }
 }
 

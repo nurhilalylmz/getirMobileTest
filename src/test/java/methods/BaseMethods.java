@@ -13,6 +13,7 @@ import java.net.URL;
 import java.util.List;
 
 
+
 public class BaseMethods
 {
     public AppiumDriver<MobileElement> driver;
@@ -59,14 +60,14 @@ public class BaseMethods
     }
 
     //("İlgili elemente tıklanmasını,eğer tıklanamazsa uyarı çıkması sağlanır.")
-    protected void clickElement(MobileElement element) {
+    protected void clickElement(By by) {
+        MobileElement element;
         try {
+            element = driver.findElement(by);
             element.click();
-            logMessage(element.getText() + " elementine tıklandı.");
         } catch (Exception e) {
-            logMessage("Elemente tıklanamadı. Element: " + element.getText() + " Hata: " + e.getMessage());
+            throw new RuntimeException(e);
         }
-
     }
 
     //İlgili element görünür oldu mu kontrol eder.
@@ -78,7 +79,7 @@ public class BaseMethods
     }
     protected void waitElementClickable(By by) {
         try {
-            wait.until(ExpectedConditions.elementToBeClickable(by));
+            wait.until(ExpectedConditions.presenceOfAllElementsLocatedBy(by));
         } catch (Exception e) {
         }
     }
@@ -100,5 +101,6 @@ public class BaseMethods
             e.printStackTrace();
         }
     }
+
 
 }

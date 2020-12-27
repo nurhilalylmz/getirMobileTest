@@ -9,6 +9,7 @@ import java.util.List;
 public class ContantsBasketPage
 {
     public static By removeButton=By.xpath("//android.widget.ImageView[@resource-id='com.getir.casestudy.dev:id/btnRemove");
+    public static By addButton=By.xpath("//android.widget.ImageView[@resource-id='com.getir.casestudy.dev:id/btnAdd");
     public static By noProductTitle=By.xpath("com.getir.casestudy.dev:id/tvTitle");
 
 }

@@ -2,26 +2,34 @@ package methods;
 
 import constants.*;
 import io.appium.java_client.MobileElement;
+import org.openqa.selenium.By;
 
 import java.util.List;
 
 public class MainPageMethod extends BaseMethods
 {
 
-    public void selectCategory(String category){
+    public void selectCategory(String category) {
         List<MobileElement> listElements = findByElements(ContantsMainPage.categorylist);
 
         for(MobileElement el : listElements){
             if(el.getText().equalsIgnoreCase(category)){
-                clickElement(el);
+                el.click();
             }
         }
 
     }
 
-    public void goToBasket(){
+    public void goToBasket() {
         waitSecond(10);
-        clickElement(findByElement(ContantsMainPage.basketButton));
+        waitElementClickable(ContantsMainPage.basketButton);
+        clickElement(ContantsMainPage.basketButton);
+    }
+
+    public void categoryCount() {
+        List<MobileElement> listElements = findByElements(ContantsMainPage.categorylist);
+        logMessage("Category items count: "+listElements.size());
+
     }
 
 

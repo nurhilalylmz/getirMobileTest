@@ -8,13 +8,13 @@ import java.util.List;
 
 public class CategoryPageMethod extends BaseMethods
 {
-    public void backToButton(){
-        clickElement(findByElement(ContantsCategoryPage.backButton));
+    public void backToButton() throws InterruptedException {
+        clickElement(ContantsCategoryPage.backButton);
     }
-    public void addingProduct(int productCount, int whichProduct){
+    public void addingProduct(int productCount, int whichProduct) throws InterruptedException {
         List<MobileElement> addList = findByElements(ContantsCategoryPage.productAddList);
         for (int i=0; i<productCount; i++) {
-            clickElement(addList.get(whichProduct-1));
+            addList.get(whichProduct-1).click();
         }
     }
     public void controlOfAmountOfProduct(int expectedProductCount, int whichProduct) {
